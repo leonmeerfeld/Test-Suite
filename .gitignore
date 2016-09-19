@@ -1,0 +1,2 @@
+#ignore all files in the TestDir folder
+ut-test-suite/bin/Debug/TestDir/
