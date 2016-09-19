@@ -1,0 +1,45 @@
+﻿<Window x:Class="ut_test_suite.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Universität Trier Testing Suite" Height="436" Width="599" ResizeMode="NoResize">
+    <Grid>
+        <TabControl Margin="0,10">
+            <TabItem Name="dashboardTab" Header="Dashboard">
+                <Grid Background="AliceBlue" Margin="0,0,0,20">
+                    <Button Name="addTestBtn" Content="Test hinzufügen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,301,0,0" Click="AddTestBtn_Click"/>
+                    <Button Name="removeTestBtn" Content="Entfernen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="135,301,0,0" Click="RemoveTestBtn_Click"/>
+                    <Button Name="runTestBtn" Content="Ausführen" VerticalAlignment="Top" Width="120" Margin="413,301,10,0" Click="RunTestBtn_Click"/>
+                    <ListView Name="dashboardListView" Margin="10,10,10,0" Height="286" VerticalAlignment="Top" Loaded="ListView_Loaded" GotFocus="ListView_Focus" LostFocus="ListView_Focus" SelectionChanged="ListView_SelectionChanged" SelectionMode="Single">
+                        <ListView.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Header="Ausführen" Click="RunTestBtn_Click"></MenuItem>
+                                <MenuItem Header="Entfernen" Click="RemoveTestBtn_Click"></MenuItem>
+                                <MenuItem Header="Letzten Log auslesen" Click="ShowLatestLog_Click"></MenuItem>
+                            </ContextMenu>
+                        </ListView.ContextMenu>
+                        
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Name" Width="auto" DisplayMemberBinding="{Binding name}"/>
+                                <GridViewColumn Header="Status" Width="120" DisplayMemberBinding="{Binding status}"/>
+                                <GridViewColumn Header="Ergebnis" Width="200" DisplayMemberBinding="{Binding result}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </TabItem>
+            <TabItem Name="verlaufTab" Header="Verlauf">
+                <Grid Background="AliceBlue" Margin="0,0,0,10">
+                    <ListView Name="progressListView" Margin="10,10,10,0" Height="286" VerticalAlignment="Top" Loaded="ListView_Loaded" GotFocus="ListView_Focus" LostFocus="ListView_Focus" SelectionChanged="ListView_SelectionChanged" SelectionMode="Single">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Name" Width="auto" DisplayMemberBinding="{Binding name}"/>
+                                <GridViewColumn Header="Status" Width="auto" DisplayMemberBinding="{Binding status}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
