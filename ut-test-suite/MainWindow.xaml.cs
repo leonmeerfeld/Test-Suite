@@ -202,5 +202,10 @@ namespace ut_test_suite
             LogResult lR = new LogResult(l.getLatestLog(testtoRetrieveLatestLogFrom.name));
             lR.Show();
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

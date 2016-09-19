@@ -1,9 +1,29 @@
 ﻿<Window x:Class="ut_test_suite.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Universität Trier Testing Suite" Height="436" Width="599" ResizeMode="NoResize">
+        Title="Universität Trier Testing Suite" Height="473" Width="599" ResizeMode="NoResize">
     <Grid>
-        <TabControl Margin="0,10">
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="File">
+                    <MenuItem Click="AddTestBtn_Click" Header="Test hinzufügen"></MenuItem>
+                    <MenuItem Click="RemoveTestBtn_Click" Header="Test Entfernen"></MenuItem>
+                    <MenuItem Header="Programm beenden"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Log">
+                    <MenuItem Click="ShowLatestLog_Click" Header="Letzten Log öffnen"></MenuItem>
+                    <MenuItem Header="Logverzeichnis öffnen"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Einstellungen">
+                    <MenuItem Header="Tests Konfigurieren"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Hilfe">
+                    <MenuItem Header="Kontakt"></MenuItem>
+                    <MenuItem Header="Über"></MenuItem>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+        <TabControl Margin="0,22,0,10">
             <TabItem Name="dashboardTab" Header="Dashboard">
                 <Grid Background="AliceBlue" Margin="0,0,0,20">
                     <Button Name="addTestBtn" Content="Test hinzufügen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,301,0,0" Click="AddTestBtn_Click"/>
