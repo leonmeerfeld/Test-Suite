@@ -1,0 +1,10 @@
+Test process:
+ - Starting test...
+ - Starting webdriver...
+ - An exception occurred running this test. System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei OpenQA.Selenium.Remote.RemoteWebElement.get_Displayed()
+   bei OpenQA.Selenium.Support.UI.ExpectedConditions.<>c__DisplayClass13.<ElementIsVisible>b__12(IWebDriver driver)
+   bei OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   bei selenium_automation.SiteModels.WaitForElementToBePresent(By byParam, Int32 seconds)
+   bei selenium_automation.SiteModels.VeranstaltungenAnlegenMenuButton()
+   bei selenium_automation.Program.Main(String[] args)

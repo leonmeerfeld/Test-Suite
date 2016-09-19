@@ -1,0 +1,22 @@
+Test process:
+ - Starting test...
+ - Starting webdriver...
+ - Veranstaltung angelegt.
+ - Veranstaltung erfolgreich editiert.
+ - Sprache erfolgreich gesetzt.
+ - Maximale Teilnehmeranzahl erfolgreich gesetzt.
+ - Dozent erfolgreich gesetzt.
+ - An exception occurred running this test. System.InvalidOperationException: chrome not reachable
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (100)
+   bei OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   bei OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   bei OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   bei OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   bei OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   bei OpenQA.Selenium.By.FindElement(ISearchContext context)
+   bei OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   bei OpenQA.Selenium.Support.UI.ExpectedConditions.<>c__DisplayClass13.<ElementIsVisible>b__12(IWebDriver driver)
+   bei OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   bei selenium_automation.SiteModels.RaumAuswahlCheckboxList()
+   bei selenium_automation.Program.Main(String[] args)

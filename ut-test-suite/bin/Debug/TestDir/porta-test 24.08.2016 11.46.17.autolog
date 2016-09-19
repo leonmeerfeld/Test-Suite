@@ -1,0 +1,10 @@
+Test process:
+ - Starting test...
+ - Starting webdriver...
+ - Veranstaltung angelegt.
+ - Veranstaltung erfolgreich editiert.
+ - Sprache erfolgreich gesetzt.
+ - Maximale Teilnehmeranzahl erfolgreich gesetzt.
+ - Dozent erfolgreich gesetzt.
+ - Test erfolgreich abgeschlossen.
+ - Zeit: 00:04:36

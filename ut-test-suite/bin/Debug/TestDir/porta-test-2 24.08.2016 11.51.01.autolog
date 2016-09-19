@@ -1,0 +1,24 @@
+Test process:
+ - Starting test...
+ - Starting webdriver...
+ - An exception occurred running this test. OpenQA.Selenium.WebDriverException: Unexpected error. System.Net.WebException: Die Anfrage wurde abgebrochen: Die Anfrage wurde abgebrochen..
+   bei System.Net.ConnectStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   bei System.IO.StreamReader.ReadBuffer()
+   bei System.IO.StreamReader.ReadToEnd()
+   bei OpenQA.Selenium.Remote.HttpCommandExecutor.GetTextOfWebResponse(HttpWebResponse webResponse)
+   bei OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+   bei OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+   bei OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)
+   bei OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   bei OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   bei OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   bei OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   bei OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   bei OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+   bei OpenQA.Selenium.By.FindElement(ISearchContext context)
+   bei OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   bei OpenQA.Selenium.Support.UI.ExpectedConditions.<>c__DisplayClass13.<ElementIsVisible>b__12(IWebDriver driver)
+   bei OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   bei selenium_automation.SiteModels.WaitForElementToBePresent(By byParam, Int32 seconds)
+   bei selenium_automation.SiteModels.RaumpläneSemesterArrow()
+   bei selenium_automation.Program.Main(String[] args)

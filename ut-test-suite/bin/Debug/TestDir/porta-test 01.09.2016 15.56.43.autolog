@@ -1,0 +1,13 @@
+Test process:
+ - Starting test...
+ - Starting webdriver...
+ - Veranstaltung angelegt.
+ - Veranstaltung erfolgreich editiert.
+ - Sprache erfolgreich gesetzt.
+ - Maximale Teilnehmeranzahl erfolgreich gesetzt.
+ - Dozent erfolgreich gesetzt.
+ - An exception occurred running this test. System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei OpenQA.Selenium.Support.UI.ExpectedConditions.<>c__DisplayClass13.<ElementIsVisible>b__12(IWebDriver driver)
+   bei OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   bei selenium_automation.SiteModels.RaumAuswahlCheckboxList()
+   bei selenium_automation.Program.Main(String[] args)
