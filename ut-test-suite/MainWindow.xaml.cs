@@ -203,9 +203,9 @@ namespace ut_test_suite
             lR.Show();
         }
 
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-
+        private void Configuration_Click(object sender, RoutedEventArgs e) {
+            ConfigurationWindow cW = new ConfigurationWindow();
+            cW.Show();
+            }
         }
-    }
 }

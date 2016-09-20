@@ -15,7 +15,7 @@
                     <MenuItem Header="Logverzeichnis öffnen"></MenuItem>
                 </MenuItem>
                 <MenuItem Header="Einstellungen">
-                    <MenuItem Header="Tests Konfigurieren"></MenuItem>
+                    <MenuItem Click="Configuration_Click" Header="Tests Konfigurieren"></MenuItem>
                 </MenuItem>
                 <MenuItem Header="Hilfe">
                     <MenuItem Header="Kontakt"></MenuItem>

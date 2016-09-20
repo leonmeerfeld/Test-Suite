@@ -1,0 +1,18 @@
+﻿<Window x:Class="ut_test_suite.ConfigurationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Optionen" Height="182" Width="330">
+    <Grid Background="AliceBlue" Margin="0,0,0,0">
+        <Label Name="urlLabel" Content="URL" HorizontalAlignment="Left" Margin="20,27,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.065,0.577"/>
+        <TextBox Name="configurationUrlTextbox" ToolTip="Ändere hier den Link der zu testenden Seite. Vorsicht: Kann zu Fehlern führen." HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Margin="94,30,0,0"/>
+        <Label Name="configurationHyperlinkExample" Content="Bsp.: https://porta-neu.uni-trier.de/" HorizontalAlignment="Left" Margin="94,51,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.065,0.577" Foreground="#B2000000"/>
+        <Grid Background="White" Margin="0,100,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0*"/>
+            </Grid.ColumnDefinitions>
+            <Button  Click="configurationSaveButton_Click" Name="configurationSaveButton" Content="Speichern" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="84,9,0,0" RenderTransformOrigin="0.6,-0.476" Height="22"/>
+            <Button  Click="configurationCancelButton_Click" Name="configurationCancelButton" Content="Abbrechen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="194,10,0,0" RenderTransformOrigin="0.373,-2.273" Height="22"/>
+        </Grid>
+    </Grid>
+</Window>

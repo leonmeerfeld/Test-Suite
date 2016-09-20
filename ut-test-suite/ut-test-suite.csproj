@@ -53,6 +53,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ConfigurationWindow.xaml.cs">
+      <DependentUpon>ConfigurationWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ListViewInteraction.cs" />
     <Compile Include="LogResult.xaml.cs">
       <DependentUpon>LogResult.xaml</DependentUpon>
@@ -60,6 +63,10 @@
     <Compile Include="Logs.cs" />
     <Compile Include="RunApplication.cs" />
     <Compile Include="Tests.cs" />
+    <Page Include="ConfigurationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="LogResult.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
